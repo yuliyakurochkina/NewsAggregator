@@ -1,3 +1,10 @@
 <resources>
-    <string name="app_name">NewsAggregator</string>
+    <string name="app_name">NewsAgg</string>
+    <string name="home">Home</string>
+    <string name="favorites">Favorites</string>
+    <string name="api_key">37e06444ce9441e9b7160b520eb73481</string>
+    <string name="read_completely">Read completely…</string>
+    <string name="appbar_scrolling_view_layout_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="no_bookmarks_yet">No bookmarks yet</string>
 </resources>

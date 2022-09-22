@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BoldText">
+        <item name="android:fontFamily">sans-serif-black</item>
+    </style>
+
+    <style name="MediumText">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="BoldText.CardTitle" parent="BoldText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white_80</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="BoldText.Title" parent="BoldText">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/white_100</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="MediumText.DescriptionTitle" parent="MediumText">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textColor">@color/white_80</item>
+    </style>
+
+    <style name="BoldText.DescriptionExpanded" parent="BoldText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white_80</item>
+    </style>
+
+    <style name="BoldText.DescriptionExpandedShadowed" parent="BoldText">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/white_100</item>
+        <item name="android:shadowRadius">24</item>
+        <item name="android:shadowColor">@color/black_70</item>
+    </style>
+
+</resources>
