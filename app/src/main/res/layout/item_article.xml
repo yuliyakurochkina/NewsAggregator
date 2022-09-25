@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp">
+
+    <ImageView
+        android:id="@+id/ivFromArticle"
+        android:layout_width="88dp"
+        android:layout_height="84dp"
+        android:contentDescription="@android:string/autofill"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_baseline_image_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/article_info"
+        android:layout_width="238dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="36dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDate"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/Theme.AppCompat.DayNight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="5"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivBookmarkAdded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="8dp"
+        android:contentDescription="@android:string/autofill"
+        android:src="@drawable/ic_baseline_favorite_24"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivAddToBookmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="8dp"
+        android:contentDescription="@android:string/autofill"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/ivDeleteFromBookmarks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="8dp"
+        android:src="@drawable/ic_baseline_delete_outline_24"
+        android:visibility="gone"
+        android:contentDescription="@android:string/autofill"/>
+
+</androidx.cardview.widget.CardView>
