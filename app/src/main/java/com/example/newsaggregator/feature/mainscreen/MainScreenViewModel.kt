@@ -28,7 +28,7 @@ class MainScreenViewModel(
         when (event) {
             is DataEvent.LoadArticles -> {
                 viewModelScope.launch {
-                    interactor.getArticles().fold(
+                    interactor.getArticlesForMainScreen().fold(
                         onError = {
                             processDataEvent(DataEvent.OnLoadArticlesFailed)
                         },
