@@ -15,9 +15,9 @@ data class BookmarkEntity(
     @ColumnInfo(name = "content")
     val content: String?,
     @ColumnInfo(name = "url")
-    val url: String,
+    val url: String?,
     @ColumnInfo(name = "urlToImage")
-    val urlToImage: String,
+    val urlToImage: String?,
     @ColumnInfo(name = "publishedAt")
-    val publishedAt: String
+    val publishedAt: String?
 )

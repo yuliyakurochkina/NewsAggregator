@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.newsaggregator.feature.domain.ArticleModel
 import com.example.newsaggregator.R
-import kotlinx.android.synthetic.main.item_article.view.*
 
 class BookmarksArticlesAdapter(
     private val onDeleteFromBookmarksClicked: (Int) -> Unit,
@@ -23,7 +22,7 @@ class BookmarksArticlesAdapter(
         val tvTitle: TextView = view.findViewById(R.id.tvTitle)
         val textDate: TextView = view.findViewById(R.id.tvDate)
         val ivArticleImage: ImageView = view.findViewById(R.id.ivFromArticle)
-        private val ivDeleteArticleFromBookmarks: ImageView = view.findViewById<ImageView?>(R.id.ivDeleteFromBookmarks)
+        val ivDeleteArticleFromBookmarks: ImageView = view.findViewById<ImageView?>(R.id.ivDeleteFromBookmarks)
             .also { it.visibility = ImageView.VISIBLE }
     }
 
@@ -35,7 +34,7 @@ class BookmarksArticlesAdapter(
 
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
 
-        viewHolder.itemView.ivDeleteFromBookmarks.setOnClickListener {
+        viewHolder.ivDeleteArticleFromBookmarks.setOnClickListener {
             onDeleteFromBookmarksClicked.invoke(position)
         }
 

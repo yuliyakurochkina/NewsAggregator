@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.newsaggregator.feature.domain.ArticleModel
 import com.example.newsaggregator.R
-import kotlinx.android.synthetic.main.item_article.view.*
 
 class ArticlesAdapter(
     private val onAddToBookmarksClicked: (Int) -> Unit,
@@ -24,7 +23,7 @@ class ArticlesAdapter(
         val tvDate: TextView = view.findViewById(R.id.tvDate)
         val ivArticleImage: ImageView = view.findViewById(R.id.ivFromArticle)
         val ivBookmarkAdded: ImageView = view.findViewById(R.id.ivBookmarkAdded)
-        private val ivAddToBookmarks: ImageView =
+        val ivAddToBookmarks: ImageView =
             view.findViewById<ImageView?>(R.id.ivAddToBookmarks)
                 .also { it.visibility = ImageView.VISIBLE }
     }
@@ -40,7 +39,7 @@ class ArticlesAdapter(
     // Заменить содержимое представления (вызывается менеджером layout)
     override fun onBindViewHolder(viewHolder: ViewHolder, position: Int) {
 
-        viewHolder.itemView.ivAddToBookmarks.setOnClickListener {
+        viewHolder.ivAddToBookmarks.setOnClickListener {
             onAddToBookmarksClicked.invoke(position)
             notifyDataSetChanged()
         }
