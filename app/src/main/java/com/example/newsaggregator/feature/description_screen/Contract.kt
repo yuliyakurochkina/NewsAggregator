@@ -5,11 +5,11 @@ import com.example.newsaggregator.feature.domain.ArticleModel
 
 data class ViewState(
     val title: String,
-    val description: String,
+    val description: String?,
     val content: String?,
-    val publishedAt:String,
+    val publishedAt:String?,
     val urlToImage: String?,
-    val url: String
+    val url: String?
 )
 
 sealed class UiEvent : Event {

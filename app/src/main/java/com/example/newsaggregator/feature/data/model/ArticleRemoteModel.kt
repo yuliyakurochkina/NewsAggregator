@@ -1,8 +1,10 @@
 package com.example.newsaggregator.feature.data.model
 
+import androidx.annotation.NonNull
 import com.google.gson.annotations.SerializedName
 
 data class ArticleRemoteModel(
+    @NonNull
     @SerializedName("title")
     val title: String,
     @SerializedName("description")

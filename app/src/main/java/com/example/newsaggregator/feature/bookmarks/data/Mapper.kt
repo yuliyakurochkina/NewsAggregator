@@ -4,12 +4,12 @@ import com.example.newsaggregator.feature.bookmarks.data.local.model.BookmarkEnt
 import com.example.newsaggregator.feature.domain.ArticleModel
 
 fun BookmarkEntity.toDomain() = ArticleModel(
-    title = title,
+    title = title ?: "",
     description = description ?: "",
     content = content ?: "",
-    url = url,
-    urlToImage = urlToImage,
-    publishedAt = publishedAt
+    url = url ?: "",
+    urlToImage = urlToImage ?: "",
+    publishedAt = publishedAt ?: ""
 )
 
 fun ArticleModel.toEntity() = BookmarkEntity(
